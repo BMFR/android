@@ -31,8 +31,8 @@
            sync-c="true"
            sync-j="8" />
 
-  <project path="build" name="CyanogenMod/android_build" groups="pdk,tradefed" >
-    <copyfile src="core/root.mk" dest="Makefile" />
+  <project path="build" name="CyanogenMod/android_build" groups="pdk" > 
+    <copyfile src="core/root.mk" dest="Makefile" /> 
   </project>
 
   <project path="android" name="android" remote="bmfr" revision="bmfr-lolli" groups="pdk" />
