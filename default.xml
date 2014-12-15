@@ -40,7 +40,7 @@
   <project path="abi/cpp" name="android_abi_cpp" groups="pdk" />
   <project path="art" name="android_art" />
   <project path="bionic" name="android_bionic" groups="pdk" />
-  <project path="bootable/recovery" name="CyanogenMod/android_bootable_recovery" groups="pdk" />
+  <project path="bootable/recovery" name="android_bootable_recovery" groups="pdk" />
   <project path="cts" name="platform/cts" remote="aosp" revision="refs/tags/android-5.0.1_r1" groups="cts" />
   <project path="dalvik" name="platform/dalvik" groups="pdk-cw-fs" remote="aosp" revision="refs/tags/android-5.0.1_r1" />
   <project path="developers/build" name="platform/developers/build" remote="aosp" revision="refs/tags/android-5.0.1_r1" />
@@ -342,6 +342,7 @@
   <project path="external/zopfli" name="platform/external/zopfli" groups="pdk-cw-fs" remote="aosp" revision="refs/tags/android-5.0.1_r1" />
   <project path="external/zxing" name="platform/external/zxing" groups="pdk-cw-fs" remote="aosp" revision="refs/tags/android-5.0.1_r1" />
   <project path="frameworks/av" name="android_frameworks_av" groups="pdk" />
+  <project path="frameworks/base" name="android_frameworks_base" />
   <project path="frameworks/compile/libbcc" name="android_frameworks_compile_libbcc" groups="pdk" />
   <project path="frameworks/compile/mclinker" name="android_frameworks_compile_mclinker" groups="pdk" />
   <project path="frameworks/compile/slang" name="android_frameworks_compile_slang" groups="pdk" />
@@ -361,7 +362,6 @@
   <project path="frameworks/opt/photoviewer" name="android_frameworks_opt_photoviewer" />
   <project path="frameworks/opt/timezonepicker" name="android_frameworks_opt_timezonepicker" />
   <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" groups="pdk" />
-  <project path="frameworks/opt/telephony-msim" name="android_frameworks_opt_telephony-msim" />
   <project path="frameworks/opt/vcard" name="android_frameworks_opt_vcard" />
   <project path="frameworks/opt/widget" name="platform/frameworks/opt/widget" remote="aosp" revision="refs/tags/android-5.0.1_r1" />
   <project path="frameworks/rs" name="android_frameworks_rs" groups="pdk" />
@@ -380,7 +380,6 @@
   <project path="hardware/qcom/audio" name="android_hardware_qcom_audio" groups="qcom" />
   <project path="hardware/qcom/bt" name="android_hardware_qcom_bt" groups="qcom" />
   <project path="hardware/qcom/camera" name="android_hardware_qcom_camera" groups="qcom" />
-  <project path="hardware/qcom/display-caf-new" name="android_hardware_qcom_display-caf-new" groups="caf" />
   <project path="hardware/qcom/gps" name="android_hardware_qcom_gps" groups="qcom" />
   <project path="hardware/qcom/keymaster" name="android_hardware_qcom_keymaster" groups="qcom" />
   <project path="hardware/qcom/media" name="android_hardware_qcom_media" groups="qcom" />
@@ -419,6 +418,7 @@
   <project path="packages/apps/Contacts" name="android_packages_apps_Contacts" />
   <project path="packages/apps/ContactsCommon" name="android_packages_apps_ContactsCommon" />
   <project path="packages/apps/DeskClock" name="android_packages_apps_DeskClock" />
+  <project path="packages/apps/Dialer" name="android_packages_apps_Dialer" />
   <project path="packages/apps/DSPManager" name="android_packages_apps_DSPManager" />
   <project path="packages/apps/Email" name="android_packages_apps_Email" />
   <project path="packages/apps/Exchange" name="android_packages_apps_Exchange" />
@@ -441,8 +441,8 @@
   <project path="packages/apps/Trebuchet" name="android_packages_apps_Trebuchet" />
   <project path="packages/apps/UnifiedEmail" name="android_packages_apps_UnifiedEmail" />
   <project path="packages/apps/VideoEditor" name="android_packages_apps_VideoEditor" />
-  <project path="packages/apps/VoicePlus" name="android_packages_apps_VoicePlus" />
   <project path="packages/experimental" name="android_packages_experimental" />
+  <project path="packages/apps/InCallUI" name="android_packages_apps_InCallUI" />
   <project path="packages/inputmethods/LatinIME" name="android_packages_inputmethods_LatinIME" />
   <project path="packages/inputmethods/OpenWnn" name="android_packages_inputmethods_OpenWnn" />
   <project path="packages/inputmethods/PinyinIME" name="android_packages_inputmethods_PinyinIME" />
@@ -457,6 +457,8 @@
   <project path="packages/screensavers/Basic" name="android_packages_screensavers_Basic" />
   <project path="packages/screensavers/PhotoTable" name="android_packages_screensavers_PhotoTable" />
   <project path="packages/screensavers/WebView" name="android_packages_screensavers_WebView" />
+  <project path="packages/services/Telephony" name="android_packages_services_Telephony" />
+  <project path="packages/apps/Settings" name="android_packages_apps_Settings" />
   <project path="packages/wallpapers/Basic" name="android_packages_wallpapers_Basic" />
   <project path="packages/wallpapers/Galaxy4" name="android_packages_wallpapers_Galaxy4" />
   <project path="packages/wallpapers/HoloSpiral" name="android_packages_wallpapers_HoloSpiral" />
@@ -532,27 +534,21 @@
   <project path="tools/studio/cloud" name="platform/tools/studio/cloud" groups="notdefault,tools" remote="aosp" revision="refs/tags/android-5.0.1_r1" />
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" remote="aosp" revision="refs/tags/android-5.0.1_r1" />
   <project path="vendor/cyngn" name="cyngn/android_vendor_cyngn" remote="cm" />
+  <project path="vendor/cm" name="android_vendor_cm" />
   
   <!--BMFR Additions-->
-  <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="bmfr" revision="bmfr-lolli" />
-  <project path="packages/apps/TeamNocturnal" name="packages_apps_TeamNocturnal" remote="bmfr" revision="bmfr-lolli" />  
-  <project path="packages/services/Telephony" name="android_packages_services_Telephony" remote="bmfr" revision="bmfr-lolli" />
-  <project path="packages/apps/Dialer" name="android_packages_apps_Dialer" remote="bmfr" revision="bmfr-lolli" />
-  <project path="frameworks/base" name="android_frameworks_base" remote="bmfr" revision="bmfr-lolli" />
-  <project path="packages/apps/InCallUI" name="android_packages_apps_InCallUI" remote="bmfr" revision="bmfr-lolli" />
-  <project path="vendor/cm" name="android_vendor_cm" remote="bmfr" revision="bmfr-lolli" />
   <project path="hardware/samsung" name="android_hardware_samsung" />
-  <project path="device/samsung/klte-common" name="android_device_samsung_klte-common" remote="bmfr" revision="bmfr-lolli" />
-  <project path="device/samsung/kltespr" name="android_device_samsung_kltespr" remote="bmfr" revision="bmfr-lolli" />
-  <project path="device/samsung/msm8974-common" name="android_device_samsung_msm8974-common" remote="bmfr" revision="bmfr-lolli" />
+  <project path="device/samsung/klte-common" name="android_device_samsung_klte-common" />
+  <project path="device/samsung/kltespr" name="android_device_samsung_kltespr"  />
+  <project path="device/samsung/msm8974-common" name="android_device_samsung_msm8974-common" />
   <project path="device/qcom/common" name="android_device_qcom_common" />
-  <project path="kernel/samsung/klte" name="android_kernel_samsung_klte" remote="bmfr" revision="bmfr-lolli" />
-  <project path="hardware/qcom/display" name="android_hardware_qcom_display" remote="bmfr" revision="bmfr-lolli" groups="qcom" />
-  <project path="hardware/qcom/display-caf" name="android_hardware_qcom_display-caf" remote="bmfr" revision="bmfr-lolli" groups="caf" />
-  <project path="kernel/google/msm" name="android_kernel_google_msm" remote="bmfr" revision="bmfr-lolli" />
-  <project path="kernel/htc/msm8960" name="android_kernel_htc_msm8960" remote="bmfr" revision="bmfr-lolli" />
-  <project name="android_device_asus_flo" path="device/asus/flo" remote="bmfr" revision="bmfr-lolli" />
-  <project path="device/samsung/qcom-common" name="android_device_samsung_qcom-common" remote="bmfr" revision="bmfr-lolli" />
+  <project path="kernel/samsung/klte" name="android_kernel_samsung_klte"  />
+  <project path="hardware/qcom/display" name="android_hardware_qcom_display"  />
+  <project path="hardware/qcom/display-caf" name="android_hardware_qcom_display-caf"  />
+  <project path="kernel/google/msm" name="android_kernel_google_msm"  />
+  <project path="kernel/htc/msm8960" name="android_kernel_htc_msm8960"  />
+  <project name="android_device_asus_flo" path="device/asus/flo"  />
+  <project path="device/samsung/qcom-common" name="android_device_samsung_qcom-common"  />
   <project path="vendor/samsung" name="proprietary_vendor_samsung" remote="tm" revision="cm-12.0" />
   <project path="vendor/htc" name="proprietary_vendor_htc" remote="tm" revision="cm-12.0" />
 </manifest>
