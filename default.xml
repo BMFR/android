@@ -574,7 +574,6 @@
   <project path="device/samsung/msm8974-common" name="android_device_samsung_msm8974-common" />
   <project path="device/qcom/common" name="android_device_qcom_common" />
   <project path="kernel/samsung/klte" name="android_kernel_samsung_klte"  />
-  <project path="hardware/qcom/display" name="android_hardware_qcom_display"  />
   <project path="hardware/qcom/display-caf" name="android_hardware_qcom_display-caf"  />
   <project path="kernel/google/msm" name="android_kernel_google_msm"  />
   <project path="kernel/htc/msm8960" name="android_kernel_htc_msm8960"  />
