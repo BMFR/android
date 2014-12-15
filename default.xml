@@ -40,11 +40,10 @@
   <project path="abi/cpp" name="android_abi_cpp" groups="pdk" />
   <project path="art" name="android_art" />
   <project path="bionic" name="android_bionic" groups="pdk" />
-  <project path="bootable/diskinstaller" name="android_bootable_diskinstaller" />
   <project path="bootable/recovery" name="android_bootable_recovery" />
   <project path="bootable/recovery-cm" name="android_bootable_recovery-cm" />
   <project path="cts" name="platform/cts" remote="aosp" revision="refs/tags/android-5.0.1_r1" groups="cts" />
-  <project path="dalvik" name="android_dalvik" />
+  <project path="dalvik" name="platform/dalvik" groups="pdk-cw-fs" remote="aosp" revision="refs/tags/android-5.0.1_r1" />
   <project path="developers/build" name="platform/developers/build" remote="aosp" revision="refs/tags/android-5.0.1_r1" />
   <project path="developers/demos" name="platform/developers/demos" remote="aosp" revision="refs/tags/android-5.0.1_r1" />
   <project path="developers/docs" name="platform/developers/docs" remote="aosp" revision="refs/tags/android-5.0.1_r1" />
@@ -354,7 +353,6 @@
   <project path="frameworks/opt/emoji" name="android_frameworks_opt_emoji" />
   <project path="frameworks/opt/hardware" name="android_frameworks_opt_hardware" />
   <project path="frameworks/opt/inputmethodcommon" name="android_frameworks_opt_inputmethodcommon" />
-  <project path="frameworks/opt/mailcommon" name="android_frameworks_opt_mailcommon" />
   <project path="frameworks/opt/mms" name="android_frameworks_opt_mms" />
   <project path="frameworks/opt/net/voip" name="android_frameworks_opt_net_voip" />
   <project path="frameworks/opt/photoviewer" name="android_frameworks_opt_photoviewer" />
@@ -377,7 +375,6 @@
   <project path="hardware/libhardware" name="android_hardware_libhardware" groups="pdk" />
   <project path="hardware/libhardware_legacy" name="android_hardware_libhardware_legacy" groups="pdk" />
   <project path="hardware/qcom/audio" name="android_hardware_qcom_audio" groups="qcom" />
-  <project path="hardware/qcom/audio-caf" name="android_hardware_qcom_audio-caf" groups="caf" />
   <project path="hardware/qcom/bt" name="android_hardware_qcom_bt" groups="qcom" />
   <project path="hardware/qcom/camera" name="android_hardware_qcom_camera" groups="qcom" />
   <project path="hardware/qcom/display-caf-new" name="android_hardware_qcom_display-caf-new" groups="caf" />
@@ -437,7 +434,6 @@
   <project path="packages/apps/SpeechRecorder" name="android_packages_apps_SpeechRecorder" />
   <project path="packages/apps/Stk" name="android_packages_apps_Stk" />
   <project path="packages/apps/Tag" name="android_packages_apps_Tag" />
-  <project path="packages/apps/ThemeChooser" name="android_packages_apps_ThemeChooser" />
   <project path="packages/apps/Torch" name="android_packages_apps_Torch" />
   <project path="packages/apps/Trebuchet" name="android_packages_apps_Trebuchet" />
   <project path="packages/apps/UnifiedEmail" name="android_packages_apps_UnifiedEmail" />
@@ -454,7 +450,6 @@
   <project path="packages/providers/MediaProvider" name="android_packages_providers_MediaProvider" />
   <project path="packages/providers/PartnerBookmarksProvider" name="android_packages_providers_PartnerBookmarksProvider" />
   <project path="packages/providers/TelephonyProvider" name="android_packages_providers_TelephonyProvider" />
-  <project path="packages/providers/ThemesProvider" name="android_packages_providers_ThemesProvider" />
   <project path="packages/providers/UserDictionaryProvider" name="android_packages_providers_UserDictionaryProvider" />
   <project path="packages/screensavers/Basic" name="android_packages_screensavers_Basic" />
   <project path="packages/screensavers/PhotoTable" name="android_packages_screensavers_PhotoTable" />
@@ -536,7 +531,6 @@
   <project path="vendor/cyngn" name="cyngn/android_vendor_cyngn" remote="cm" />
   
   <!--BMFR Additions-->
-  <project path="packages/wallpapers/SlothWalls" name="packages_wallpapers_SlothWalls" remote="bmfr" revision="bmfr-lolli" />
   <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="bmfr" revision="bmfr-lolli" />
   <project path="packages/apps/TeamNocturnal" name="packages_apps_TeamNocturnal" remote="bmfr" revision="bmfr-lolli" />  
   <project path="packages/services/Telephony" name="android_packages_services_Telephony" remote="bmfr" revision="bmfr-lolli" />
