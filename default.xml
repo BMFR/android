@@ -524,6 +524,6 @@
   <project path="kernel/htc/msm8960" name="android_kernel_htc_msm8960" remote="bmfr" revision="bmfr-lolli" />
   <project name="android_device_asus_flo" path="device/asus/flo" remote="bmfr" revision="bmfr-lolli" />
   <project path="device/samsung/qcom-common" name="android_device_samsung_qcom-common" remote="bmfr" revision="bmfr-lolli" />
-  <project path="vendor/samsung" name="proprietary_vendor_samsung" remote="tm" revision="cm-11.0" />
-  <project path="vendor/htc" name="proprietary_vendor_htc" remote="tm" revision="cm-11.0" />
+  <project path="vendor/samsung" name="proprietary_vendor_samsung" remote="tm" revision="cm-12.0" />
+  <project path="vendor/htc" name="proprietary_vendor_htc" remote="tm" revision="cm-12.0" />
 </manifest>
