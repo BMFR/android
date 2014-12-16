@@ -12,6 +12,12 @@
   <remote  name="bmfr"
            fetch="https://github.com/BMFR/" />
            
+           
+    <remote  name="github"
+           fetch="git://github.com/CyanogenMod/"
+           review="review.cyanogenmod.org" />         
+           
+           
   <remote  name="cm"
            fetch=".."
            review="review.cyanogenmod.org" />
