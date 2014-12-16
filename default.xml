@@ -571,7 +571,7 @@
   <project path="kernel/google/msm" name="android_kernel_google_msm"  />
   <project path="kernel/htc/msm8960" name="android_kernel_htc_msm8960"  />
   <project name="android_device_asus_flo" path="device/asus/flo"  />
-  <!--BMFR Additions-->
+  <!-BMFR Additions-->
   <!--<project path="device/samsung/klte-common" name="android_device_samsung_klte-common" />
   <project path="device/samsung/kltespr" name="android_device_samsung_kltespr" />
   <project path="device/samsung/msm8974-common" name="android_device_samsung_msm8974-common" />
