@@ -33,7 +33,7 @@
            sync-c="true"
            sync-j="8" />
 
-  <project path="build" name="android_build" groups="pdk" > 
+  <project path="build" name="android_build" remote="bmfr" revision="bmfr-lolli" groups="pdk" > 
     <copyfile src="core/root.mk" dest="Makefile" /> 
   </project>
 
@@ -49,8 +49,8 @@
   <project path="developers/demos" name="platform/developers/demos" remote="aosp" revision="refs/tags/android-5.0.1_r1" />
   <project path="developers/docs" name="platform/developers/docs" remote="aosp" revision="refs/tags/android-5.0.1_r1" />
   <project path="developers/samples/android" name="platform/developers/samples/android" remote="aosp" revision="refs/tags/android-5.0.1_r1" />
-  <project path="development" name="android_development" />
-  <project path="device/common" name="android_device_common" />
+  <project path="development" name="android_development" groups="pdk-cw-fs" />
+  <project path="device/common" name= "android_device_common" groups="pdk-cw-fs" />
   <project path="device/generic/arm64" name="android_device_generic_arm64" groups="pdk" />
   <project path="device/generic/armv7-a-neon" name="android_device_generic_armv7-a-neon" groups="pdk" />
   <project path="device/generic/common" name="android_device_generic_common" groups="pdk" />
@@ -434,7 +434,7 @@
   <project path="packages/apps/CertInstaller" name="android_packages_apps_CertInstaller" />
   <project path="packages/apps/CMBugReport" name="android_packages_apps_CMBugreport" />
   <project path="packages/apps/CMFileManager" name="android_packages_apps_CMFileManager" />
-  <project path="packages/apps/CMHome" name="android_packages_apps_CMHome" />
+  <!-- <project path="packages/apps/CMHome" name="CyanogenMod/android_packages_apps_CMHome" /> -->
   <project path="packages/apps/CMUpdater" name="android_packages_apps_CMUpdater" />
   <project path="packages/apps/CMWallpapers" name="android_packages_apps_CMWallpapers" />
   <project path="packages/apps/Contacts" name="android_packages_apps_Contacts" />
@@ -557,7 +557,7 @@
   <project path="tools/adt/idea" name="platform/tools/adt/idea" groups="notdefault,tools" remote="aosp" revision="refs/tags/android-5.0.1_r1" />
   <project path="tools/base" name="platform/tools/base" groups="notdefault,tools" remote="aosp" revision="refs/tags/android-5.0.1_r1" />
   <project path="tools/build" name="platform/tools/build" groups="notdefault,tools" remote="aosp" revision="refs/tags/android-5.0.1_r1" />
-  <project path="tools/emulator" name="platform/tools/emulator" groups="notdefault,tools" remote="aosp" revision="refs/tags/android-5.0.1_r1" />  
+  <project path="tools/emulator" name="platform/tools/emulator" groups="notdefault,tools" remote="aosp" revision="refs/tags/android-5.0.1_r1" />
   <project path="tools/external/fat32lib" name="platform/tools/external/fat32lib" groups="tools" remote="aosp" revision="refs/tags/android-5.0.1_r1" />
   <project path="tools/external/gradle" name="platform/tools/external/gradle" groups="tools" remote="aosp" revision="refs/tags/android-5.0.1_r1" />
   <project path="tools/idea" name="platform/tools/idea" groups="notdefault,tools" remote="aosp" revision="refs/tags/android-5.0.1_r1" />
@@ -566,16 +566,16 @@
   <project path="tools/studio/translation" name="platform/tools/studio/translation" groups="notdefault,tools" remote="aosp" revision="refs/tags/android-5.0.1_r1" />
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" remote="aosp" revision="refs/tags/android-5.0.1_r1" />
   <project path="vendor/cm" name="android_vendor_cm" />
-  <project path="device/qcom/common" name="android_device_qcom_common" />
+  <!--<project path="device/qcom/common" name="android_device_qcom_common" />
   <project path="kernel/samsung/klte" name="android_kernel_samsung_klte"  />
   <project path="kernel/google/msm" name="android_kernel_google_msm"  />
   <project path="kernel/htc/msm8960" name="android_kernel_htc_msm8960"  />
   <project name="android_device_asus_flo" path="device/asus/flo"  />
   <!--BMFR Additions-->
-  <project path="device/samsung/klte-common" name="android_device_samsung_klte-common" />
+  <!--<project path="device/samsung/klte-common" name="android_device_samsung_klte-common" />
   <project path="device/samsung/kltespr" name="android_device_samsung_kltespr" />
   <project path="device/samsung/msm8974-common" name="android_device_samsung_msm8974-common" />
-  <project path="device/samsung/qcom-common" name="android_device_samsung_qcom-common" />
+  <project path="device/samsung/qcom-common" name="android_device_samsung_qcom-common" />-->
   <project path="vendor/samsung" name="proprietary_vendor_samsung" remote="tm" revision="cm-12.0" />
   <project path="vendor/htc" name="proprietary_vendor_htc" remote="tm" revision="cm-12.0" />
 </manifest>
