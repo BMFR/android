@@ -33,7 +33,7 @@
            sync-c="true"
            sync-j="8" />
 
-  <project path="build" name="android_build" groups="pdk" > 
+  <project path="build" name="android_build" remote="bmfr" revision="bmfr-lolli" groups="pdk"" > 
     <copyfile src="core/root.mk" dest="Makefile" /> 
   </project>
 
