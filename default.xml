@@ -565,13 +565,11 @@
   <project path="tools/studio/cloud" name="platform/tools/studio/cloud" groups="notdefault,tools" remote="aosp" revision="refs/tags/android-5.0.2_r1" />
   <project path="tools/studio/translation" name="platform/tools/studio/translation" groups="notdefault,tools" remote="aosp" revision="refs/tags/android-5.0.2_r1" />
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" remote="aosp" revision="refs/tags/android-5.0.2_r1" />
-  <!-- <project path="device/qcom/common" name="android_device_qcom_common" />
-  <project path="kernel/samsung/klte" name="android_kernel_samsung_klte"  />
-  <project path="kernel/google/msm" name="android_kernel_google_msm"  />
-  <project path="kernel/htc/msm8960" name="android_kernel_htc_msm8960"  />
-  <project name="android_device_asus_flo" path="device/asus/flo"  /> -->
+ 
   <!--BMFR Additions-->
-  <!-- <project path="device/samsung/kltespr" name="android_device_samsung_kltespr" />
+  <project path="device/qcom/common" name="android_device_qcom_common" />
+  <project path="kernel/samsung/klte" name="android_kernel_samsung_klte"  />
+  <project path="device/samsung/kltespr" name="android_device_samsung_kltespr" />
   <project path="device/samsung/msm8974-common" name="android_device_samsung_msm8974-common" />
   <project path="device/samsung/qcom-common" name="android_device_samsung_qcom-common" /> -->
   <project path="packages/wallpapers/SlothWalls" name="packages_wallpapers_SlothWalls" remote="bmfr" revision="bmfr-lolli" />
