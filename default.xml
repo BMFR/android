@@ -346,7 +346,6 @@
   <project path="external/zopfli" name="platform/external/zopfli" groups="pdk-cw-fs" remote="aosp" revision="refs/tags/android-5.0.2_r1" />
   <project path="external/zxing" name="platform/external/zxing" groups="pdk-cw-fs" remote="aosp" revision="refs/tags/android-5.0.2_r1" />
   <project path="frameworks/av" name="android_frameworks_av" groups="pdk" />
-  <project path="frameworks/base" name="android_frameworks_base" />
   <project path="frameworks/compile/libbcc" name="android_frameworks_compile_libbcc" groups="pdk" />
   <project path="frameworks/compile/mclinker" name="android_frameworks_compile_mclinker" groups="pdk" />
   <project path="frameworks/compile/slang" name="android_frameworks_compile_slang" groups="pdk" />
@@ -572,6 +571,7 @@
   <project path="device/samsung/msm8974-common" name="android_device_samsung_msm8974-common" />
   <project path="device/samsung/qcom-common" name="android_device_samsung_qcom-common" /> -->
   <!--BMFR Additions-->
+  <project path="frameworks/base" name="android_frameworks_base" remote="bmfr" revision="bmfr-lolli" />
   <project path="packages/wallpapers/SlothWalls" name="packages_wallpapers_SlothWalls" remote="bmfr" revision="bmfr-lolli" />
   <project path="vendor/cm" name="android_vendor_cm" remote="bmfr" revision="bmfr-lolli" />
   <project path="vendor/samsung" name="proprietary_vendor_samsung" remote="tm" revision="cm-12.0" />
